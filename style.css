@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./Open_Sans/static/OpenSans-Medium.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+*{
+    font-family: 'OpenSans';
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./fondos.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.conteiner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    border: solid #ffffff46 1px;
+    right: 100px;
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(0.3rem);
+    background: rgba(0, 0, 0, 0.466);
+}
+h1{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+#cantidad{  
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    background: #c4c4c488;
+    padding: 3px 10px;
+}
+#listado{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 3px;
+    height: 380px;
+    margin-bottom: 7px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#listado::-webkit-scrollbar {
+
+    width: 5px; /* Ancho del scrollbar */
+  }
+  
+  #listado::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.575); /* Color del thumb (la parte que se arrastra) */
+    border-radius: 5px; /* Bordes redondeados del thumb */
+  }
+  
+  #listado::-webkit-scrollbar-track {
+    background-color: #f1f1f14f; /* Color de fondo del track (la parte no arrastrable) */
+    border-radius: 5px;
+  }
+h2{
+    color: #ffffffe1;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#pendiente{
+    border-bottom: 2px solid #ffffff49;
+
+}
+
+#newtask{
+    position: relative;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.15);
+    border: solid #ffffff46 1px;
+    border-radius: 10px;
+    width: 90%;
+    display: inline-block;
+    margin-left: 20px;
+}
+#inputTask{
+    all: unset;
+    padding: 8px 0 ;
+    margin-top: 0px;
+    width: 81%;
+    height: 20px;
+    margin-left: 10px;
+}
+#load {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    padding: 0 8px ;
+    border-radius: 10px;
+    margin-left: 5px;
+    background: rgba(255, 255, 255, 0.24);
+    border: none;
+    
+}
+#load:hover {
+    background: rgba(155, 155, 155, 0.24);  
+}
+.task{
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.taskName{
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px; 
+    padding-left: 5px;
+    background: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+    height: 100%;
+    width: 78%;
+    align-items: center;
+}
+.taskName >p{
+    width: 87%;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.deleted{
+    all:unset;
+    content: "borrar";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    height: 20px;
+    right: 7px;
+    border-radius: 10px;
+    background: #ff000050;
+
+}
+.deleted:hover{
+    background: #ac000050;
+}
+
+.task{
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+.hecho{
+
+    background: rgba(0, 0, 0, 0.233);
+    
+}
+.hecho > p{
+    color: rgba(230, 230, 230, 0.671);
+}
+.check{
+    all: unset ;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffffa9;
+    border-radius: 10px;
+}
+.check-hecho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4d4d4dde ;
+    border: none;
+    padding: 2px;
+}
+.check-hecho > img{
+    width: 90%;
+}
+.check:hover{
+    background: #ffffffa9;
+}
+.check-hecho:hover{
+    background: #272727de ;
+}
