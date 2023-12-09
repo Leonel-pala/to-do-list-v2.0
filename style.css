@@ -12,22 +12,24 @@
     padding: 0;
 }
 body{
-    background-image: url("./fondos.webp");
-    background-size: 100% auto;
+    width: 100vw;
+    height: 100vh;
+    background: url("./fondos.webp");   
     background-repeat: no-repeat;
 }
 .conteiner{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     border-radius: 10px;
     border: solid #ffffff46 1px;
-    right: 100px;
-    width: 400px;
-    height: 500px;
     backdrop-filter: blur(0.3rem);
     background: rgba(0, 0, 0, 0.466);
+    width: 400px;
+    height: 500px;
+
 }
+
+
+
 h1{
     margin-top: 5px;
     margin-bottom: 2px;
@@ -106,9 +108,7 @@ h2{
     border: none;
     
 }
-#load:hover {
-    background: rgba(155, 155, 155, 0.24);  
-}
+
 .task{
     margin-bottom: 15px;
     position: relative;
@@ -147,9 +147,7 @@ h2{
     background: #ff000050;
 
 }
-.deleted:hover{
-    background: #ac000050;
-}
+
 
 .task{
     margin-bottom: 15px;
@@ -185,9 +183,39 @@ h2{
 .check-hecho > img{
     width: 90%;
 }
-.check:hover{
-    background: #ffffffa9;
+
+
+@media screen and (min-width:925px){
+    body{
+        background-size: 100% auto;
+       }
+       .conteiner{
+        top: 50%;
+        transform: translateY(-50%);
+        right: 100px;
+        }
+
+    #load:hover {
+        background: rgba(155, 155, 155, 0.24);  
+    }
+    .deleted:hover{
+        background: #ac000050;
+    }
+    .check:hover{
+        background: #ffffffa9;
+    }
+    .check-hecho:hover{
+        background: #272727de ;
+    }
 }
-.check-hecho:hover{
-    background: #272727de ;
+@media screen and (max-width:925px){
+    body{
+        background-size: auto 100%;
+       }
+    .conteiner{
+    
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
