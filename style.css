@@ -11,6 +11,13 @@
     margin: 0;
     padding: 0;
 }
+
+body::before{
+    content: "";
+            display: none;
+            background-image: url('./check.svg');
+            background-image: url('./fondos.webp');
+}
 body{
     width: 100vw;
     height: 100vh;
