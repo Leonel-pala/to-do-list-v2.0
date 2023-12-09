@@ -50,7 +50,7 @@ window.addEventListener('load', e=>{
                 </div>`;
             } else if (x[i].check === "x") {
                 document.getElementById('listado').innerHTML += `<div class="task">
-                    <div class="taskName hecho"><button class="check check-hecho " value="${i}"><img src="./check.svg"></button><p>${x[i].nombre}</p></div> <button class="deleted" value="${i}">Borrar</button>
+                    <div class="taskName hecho"><buttfill-modeon class="check check-hecho " value="${i}"><img src="./check.svg"></buttfill-modeon><p>${x[i].nombre}</p></div> <button class="deleted" value="${i}">Borrar</button>
                 </div>`;
                 number ++;
             }
